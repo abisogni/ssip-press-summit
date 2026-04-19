@@ -62,7 +62,7 @@ const HeroSection = () => (
           className="text-[11.5px] md:text-[14px] font-normal tracking-[0.32em] uppercase"
           style={{ color: "hsl(175 45% 58% / 0.85)" }}
         >
-          GOIS Pre-Summit · Basel, Switzerland
+          GOIS Executive Pre-Summit · Basel, Switzerland
         </p>
         <p
           className="text-[10.5px] md:text-[12px] font-light tracking-[0.28em] uppercase mt-[6px]"
@@ -109,26 +109,39 @@ const HeroSection = () => (
         initial={{ opacity: 0, y: 16 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.9, delay: 1, ease: [0.22, 1, 0.36, 1] }}
-        className="flex flex-col sm:flex-row gap-5 justify-center"
+        className="flex flex-col items-center gap-5"
       >
-        <a
-          href="mailto:contact@ssip-pl.ch?subject=Request%20Invitation%20%E2%80%93%20GOIS%20Pre-Summit%20Basel%202026&body=Full%20Name%3A%20%0ACompany%3A%20%0ARole%20%2F%20Title%3A%20%0AEmail%3A%20%0A%0AI%20would%20like%20to%20request%20an%20invitation%20to%20the%20GOIS%20Pre-Summit%20on%2026%20May%202026%20in%20Basel."
-          className="px-10 py-3.5 text-[13px] font-medium tracking-[0.08em] uppercase rounded-[3px] transition-all duration-300 hover:-translate-y-0.5"
-          style={{
-            background: "hsl(var(--glow-primary))",
-            color: "hsl(var(--background))",
-            boxShadow: "0 0 0 1px hsl(var(--glow-primary) / 0.3), 0 4px 24px hsl(var(--glow-primary) / 0.15)",
-          }}
-        >
-          Request Invitation
-        </a>
+        <div className="flex flex-col sm:flex-row gap-5 justify-center">
+          <a
+            href="#invitation"
+            className="px-10 py-3.5 text-[13px] font-medium tracking-[0.08em] uppercase rounded-[3px] transition-all duration-300 hover:-translate-y-0.5"
+            style={{
+              background: "hsl(var(--glow-primary))",
+              color: "hsl(var(--background))",
+              boxShadow: "0 0 0 1px hsl(var(--glow-primary) / 0.3), 0 4px 24px hsl(var(--glow-primary) / 0.15)",
+            }}
+          >
+            Request Access
+          </a>
+          <a
+            href="https://gois.ssip-pl.ch"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-10 py-3.5 text-[13px] font-medium tracking-[0.08em] uppercase rounded-[3px] transition-all duration-300 hover:-translate-y-0.5"
+            style={{
+              border: "1px solid hsl(220 15% 70% / 0.2)",
+              color: "hsl(220 15% 78% / 0.8)",
+            }}
+          >
+            Learn about GOIS 2026
+          </a>
+        </div>
         <a
           href="#agenda"
-          className="px-10 py-3.5 text-[13px] font-medium tracking-[0.08em] uppercase rounded-[3px] transition-all duration-300 hover:-translate-y-0.5"
-          style={{
-            border: "1px solid hsl(220 15% 70% / 0.2)",
-            color: "hsl(220 15% 78% / 0.8)",
-          }}
+          className="text-[11px] font-light tracking-[0.2em] uppercase transition-colors duration-300"
+          style={{ color: "hsl(220 10% 45% / 0.7)" }}
+          onMouseEnter={e => (e.currentTarget.style.color = "hsl(220 10% 65% / 0.9)")}
+          onMouseLeave={e => (e.currentTarget.style.color = "hsl(220 10% 45% / 0.7)")}
         >
           Explore the Agenda
         </a>

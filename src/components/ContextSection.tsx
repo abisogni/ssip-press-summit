@@ -25,10 +25,10 @@ const ContextSection = () => (
         <p className="body-large max-w-3xl mx-auto mb-6">
           Microgravity introduces a fundamentally new operating environment for biologics discovery, crystal engineering, and advanced manufacturing, enabling outcomes not achievable under Earth gravity.
         </p>
-        <p className="body-regular max-w-3xl mx-auto mb-6">
+        <p className="body-large max-w-3xl mx-auto mb-6">
           For pharmaceutical and biotech leaders, this represents early access to capabilities that can directly impact R&D efficiency, molecular design, and future production strategies.
         </p>
-        <p className="body-regular max-w-3xl mx-auto">
+        <p className="body-large max-w-3xl mx-auto">
           This pre-summit is designed to provide decision-makers with a clear, practical understanding of what can be done today, and where early adoption creates measurable competitive advantage.
         </p>
       </AnimatedSection>
